@@ -1,0 +1,33 @@
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
+.surfpool
+encrypted-ixs/arcis_temp_target
+build
+encrypted-ixs/src/main.rs
+artifacts/
+
+# Frontend
+app/.next/
+app/out/
+app/.env.local
+app/.env*.local
+app/next-env.d.ts
+app/*.tsbuildinfo
+
+# Local lockfiles for deps that aren't intended to be committed
+yarn-error.log
+*.log
+
+# Editor
+.idea/
+.vscode/
+.claude/settings.local.json
+
+# Arcium / scratch
+.cache/
+specter/                # any nested arcium init scaffolding

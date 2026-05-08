@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Next.js frontend",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["--cwd", "app", "dev"],
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "Arcium localnet",
+      "runtimeExecutable": "arcium",
+      "runtimeArgs": ["localnet"],
+      "port": 8899
+    }
+  ]
+}

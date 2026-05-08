@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ghost-bg text-gray-200 font-mono antialiased;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(167, 139, 250, 0.08) 0, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(96, 165, 250, 0.05) 0, transparent 40%);
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(167, 139, 250, 0.15) 0%,
+    rgba(167, 139, 250, 0.4) 50%,
+    rgba(167, 139, 250, 0.15) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.materialize {
+  animation: materialize 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+@keyframes materialize {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
